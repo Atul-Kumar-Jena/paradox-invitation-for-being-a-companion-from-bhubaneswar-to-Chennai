@@ -2,31 +2,38 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # or your default branch
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
 
-      - name: Setup Pages branch
-        run: |
-          git fetch origin gh-pages || git checkout --orphan gh-pages
-          git reset --hard
-          git clean -fdx
-          echo 'gh-pages' > CNAME
-          git add CNAME
-          git commit -m "Setup gh-pages branch"
-
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git remote add origin https://github.com/${{ github.repository }}.git
-          git push --force origin gh-pages
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        id: deployment
+        uses: actions/deploy-pages@v4
