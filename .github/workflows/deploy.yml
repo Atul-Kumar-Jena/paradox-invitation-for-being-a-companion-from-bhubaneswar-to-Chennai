@@ -3,25 +3,28 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # or your default branch
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
-    - name: Set up Git user
-      run: |
-        git config --global user.name "Atul Kumar Jena"
-        git config --global user.email "jenaatul8@gmail.com"
+      - name: Setup Pages branch
+        run: |
+          git fetch origin gh-pages || git checkout --orphan gh-pages
+          git reset --hard
+          git clean -fdx
+          echo 'gh-pages' > CNAME
+          git add CNAME
+          git commit -m "Setup gh-pages branch"
 
-    - name: Add and Commit changes
-      run: |
-        git add CNAME
-        git commit -m "Setup gh-pages branch"
-
-    - name: Push changes
-      run: |
-        git push origin gh-pages
+      - name: Deploy to GitHub Pages
+        run: |
+          git remote add origin https://github.com/${{ github.repository }}.git
+          git push --force origin gh-pages
