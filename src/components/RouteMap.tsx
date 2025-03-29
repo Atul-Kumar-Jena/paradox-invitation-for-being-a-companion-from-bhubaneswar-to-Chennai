@@ -10,10 +10,10 @@ const stations = [
 
 export const RouteMap = () => {
   return (
-    <div className="w-full max-w-4xl mx-auto py-8 px-4">
-      <h2 className="text-2xl font-orbitron text-cyan text-center mb-8">Journey Route</h2>
+    <div className="w-full max-w-6xl mx-auto py-8 px-4">
+      <h2 className="text-2xl font-orbitron text-cyan text-center mb-16">Journey Route</h2>
       
-      <div className="relative h-24 mx-auto">
+      <div className="relative">
         {/* Track */}
         <div className="absolute top-1/2 left-0 w-full h-1 bg-cyan/20 transform -translate-y-1/2 rounded-full" />
         
@@ -31,11 +31,11 @@ export const RouteMap = () => {
         />
 
         {/* Stations */}
-        <div className="absolute top-0 left-0 w-full flex justify-between">
+        <div className="relative flex justify-between items-center min-h-[160px] md:min-h-[120px]">
           {stations.map((station, index) => (
             <motion.div
               key={station.name}
-              className="relative"
+              className="relative flex flex-col items-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -58,13 +58,15 @@ export const RouteMap = () => {
                 />
               </motion.div>
               
-              <div className="absolute top-5 left-1/2 transform -translate-x-1/2 w-24">
-                <p className="text-white text-center text-sm font-space whitespace-nowrap">
-                  {station.name}
-                </p>
-                <p className="text-cyan/70 text-center text-xs font-space">
-                  {station.time}
-                </p>
+              <div className="absolute w-24 text-center">
+                <div className="mt-6 transform -rotate-45 md:rotate-0 md:mt-8">
+                  <p className="text-white text-xs md:text-sm font-space whitespace-nowrap">
+                    {station.name}
+                  </p>
+                  <p className="text-cyan/70 text-xs font-space">
+                    {station.time}
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -72,7 +74,7 @@ export const RouteMap = () => {
       </div>
 
       <motion.p 
-        className="text-center text-cyan/70 font-space text-sm mt-16"
+        className="text-center text-cyan/70 font-space text-sm mt-24 md:mt-16"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
