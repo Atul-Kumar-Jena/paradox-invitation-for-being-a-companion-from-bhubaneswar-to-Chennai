@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react';
 import { Sparkles, Rocket, Brain } from 'lucide-react';
 
 const introTexts = [
-  { text: "Welcome Future IITians!", icon: Brain },
-  { text: "Ready for Paradox 2024?", icon: Rocket },
-  { text: "The Ultimate Tech Fest Awaits!", icon: Sparkles }
+  { text: "Welcome Dear IITians!", icon: Brain },
+  { text: "Ready for Paradox 2025?", icon: Rocket },
+  { text: "Here's Something For You!", icon: Sparkles }
 ];
 
 export const IntroSequence = () => {
