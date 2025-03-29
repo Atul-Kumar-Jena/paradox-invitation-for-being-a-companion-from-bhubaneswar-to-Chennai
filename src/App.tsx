@@ -34,44 +34,46 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="relative min-h-screen bg-midnight text-white overflow-hidden"
+            className="relative min-h-screen bg-midnight text-white overflow-x-hidden"
           >
             <VideoParallax videoUrl={VIDEO_URL} />
             <ParticlesBackground />
             
-            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-4 py-12 overflow-y-auto">
-              <ChuggingText />
-              
-              <div className="mt-8 w-full max-w-6xl mx-auto">
-                <ParadoxInfo />
-              </div>
-              
-              <Countdown />
-              
-              <div className="w-full max-w-6xl mx-auto mt-12">
-                <RouteMap />
-              </div>
-              
-              <div className="flex flex-col md:flex-row gap-8 items-center justify-center w-full max-w-6xl mx-auto px-4 mt-12">
-                <TrainTicket />
-                <div className="flex flex-col items-center">
-                  <UserAvatars />
-                  <div className="mt-16 space-y-4">
-                    <CtaButton formUrl={REGISTRATION_URL} />
-                    <motion.a
-                      href={PARADOX_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-center text-cyan underline font-space hover:text-white transition-colors duration-300"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      Visit Paradox Website
-                    </motion.a>
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-start overflow-y-auto">
+              <div className="w-full max-w-7xl mx-auto px-4">
+                <ChuggingText />
+                
+                <div className="mt-8 w-full">
+                  <ParadoxInfo />
+                </div>
+                
+                <Countdown />
+                
+                <div className="mt-12">
+                  <RouteMap />
+                </div>
+                
+                <div className="flex flex-col md:flex-row gap-8 items-center justify-center mt-12 mb-24">
+                  <TrainTicket />
+                  <div className="flex flex-col items-center">
+                    <UserAvatars />
+                    <div className="mt-16 space-y-4">
+                      <CtaButton formUrl={REGISTRATION_URL} />
+                      <motion.a
+                        href={PARADOX_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block text-center text-cyan underline font-space hover:text-white transition-colors duration-300"
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        Visit Paradox Website
+                      </motion.a>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Floating Info Button with Pulse Effect */}
+              {/* Info Button */}
               <motion.div
                 className="fixed bottom-4 right-4 animate-pulse"
                 initial={{ scale: 0 }}
