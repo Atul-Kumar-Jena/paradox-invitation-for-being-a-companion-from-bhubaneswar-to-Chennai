@@ -28,7 +28,7 @@ export const ChuggingText = () => {
         Calling all Bhubaneswariya IITians!
       </motion.p>
       <p className="text-cyan text-2xl md:text-3xl mt-4 animate-glow font-space">
-        Departure: 8 PM | Arrival: 4 AM
+        Departure: 8 AM | Arrival: 4 AM
       </p>
     </motion.div>
   );
