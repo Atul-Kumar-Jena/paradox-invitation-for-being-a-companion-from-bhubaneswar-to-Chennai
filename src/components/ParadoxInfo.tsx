@@ -11,7 +11,7 @@ export const ParadoxInfo = () => {
       whileHover={{ scale: 1.02 }}
     >
       <motion.div className="flex items-center justify-between mb-6">
-        <h2 className="text-3xl font-orbitron text-cyan">Paradox 2024</h2>
+        <h2 className="text-3xl font-orbitron text-cyan">Paradox 2025</h2>
         <Sparkles className="w-8 h-8 text-rail animate-pulse" />
       </motion.div>
 
