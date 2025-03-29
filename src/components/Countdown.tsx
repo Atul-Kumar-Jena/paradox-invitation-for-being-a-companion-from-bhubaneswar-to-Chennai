@@ -3,8 +3,8 @@ import dayjs from 'dayjs';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
 
-const PARADOX_START = dayjs('2024-06-04 09:00:00');
-const DAY_ZERO = dayjs('2024-06-03 09:00:00');
+const PARADOX_START = dayjs('2025-06-04 09:00:00');
+const DAY_ZERO = dayjs('2025-06-03 09:00:00');
 
 export const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -61,7 +61,7 @@ export const Countdown = () => {
       whileHover={{ scale: 1.02 }}
     >
       <h2 className="text-xl md:text-2xl font-orbitron text-center mb-4 text-cyan">
-        {isParadoxStarted ? "Paradox 2024 is Live! 🎉" : 
+        {isParadoxStarted ? "Paradox 2025 is Live! 🎉" : 
          dayjs().isBefore(DAY_ZERO) ? "Countdown to Day Zero" : "Paradox Begins In"}
       </h2>
       <div className="flex gap-4 justify-center">
