@@ -113,13 +113,13 @@ function App() {
                       <div className="space-y-6 font-space text-white/80">
                         <section>
                           <h3 className="text-xl text-white mb-3">About This Journey</h3>
-                          <p>Join fellow tech enthusiasts on an exciting train journey from Bhubaneswar to IIT Madras for Paradox 2024!</p>
+                          <p>Join fellow tech enthusiasts on an exciting train journey from Bhubaneswar to IIT Madras for Paradox 2025!</p>
                         </section>
 
                         <section>
                           <h3 className="text-xl text-white mb-3">What's Included</h3>
                           <ul className="list-disc pl-6 space-y-2">
-                            <li>20-hour journey with tech discussions</li>
+                            <li>20+ hours of journey with a lot of tech discussions</li>
                             <li>Network with fellow participants</li>
                             <li>Group activities during stops</li>
                             <li>Travel companion support</li>
@@ -133,22 +133,23 @@ function App() {
                             <li>Each participant is responsible for their own safety and belongings</li>
                             <li>Train tickets must be booked individually</li>
                             <li>The organizers are not liable for any delays or changes in travel plans</li>
+                            <li>You know what, the organizers are not liable for anything.</li>
                             <li>Participants must follow all railway and safety guidelines</li>
-                            <li>Registration for Paradox 2024 is separate from this journey</li>
+                            <li>Registration for Paradox 2025 is separate from this journey</li>
                           </ul>
                         </section>
 
                         <section>
                           <h3 className="text-xl text-white mb-3">Preparation Tips</h3>
                           <ul className="list-disc pl-6 space-y-2">
-                            <li>Book your train tickets early</li>
-                            <li>Join the WhatsApp group for updates</li>
+                            <li>Book your train tickets before 1st April</li>
+                            <li>Join the WhatsApp group for updates after filling the google form.</li>
                             <li>Pack light and bring essentials</li>
-                            <li>Keep your laptop and devices charged</li>
+                            <li>Keep your laptop and devices charged(and at your own risks.)</li>
                           </ul>
                         </section>
 
-                        <p className="text-cyan mt-6">For any queries, contact the student coordinators through the registration form.</p>
+                        <p className="text-cyan mt-6">For any queries, contact the student coordinators through the registration form or what's app group.</p>
                       </div>
                     </motion.div>
                   </motion.div>
