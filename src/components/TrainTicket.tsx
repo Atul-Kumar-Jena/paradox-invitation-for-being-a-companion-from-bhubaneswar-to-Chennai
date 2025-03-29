@@ -14,7 +14,7 @@ export const TrainTicket = () => {
       <div className="flex justify-between items-start mb-6">
         <div>
           <h3 className="font-orbitron text-xl text-white">Student Special</h3>
-          <p className="text-cyan/80 font-space text-sm mt-1">Chennai Express</p>
+          <p className="text-cyan/80 font-space text-sm mt-1">Chennai Central Mail Express</p>
         </div>
         <Train className="text-rail w-8 h-8" />
       </div>
@@ -32,7 +32,7 @@ export const TrainTicket = () => {
           <Calendar className="text-cyan w-5 h-5" />
           <div>
             <p className="text-white/70 text-sm font-space">Journey Date</p>
-            <p className="text-white font-orbitron">April 1, 2024</p>
+            <p className="text-white font-orbitron">June 1, 2024</p>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ export const TrainTicket = () => {
 
       <div className="mt-6 pt-6 border-t border-cyan/20">
         <p className="text-white/90 font-space text-sm">
-          From the City of Temples to the Home of IIT Madras - An Epic Railway Journey!
+          From the City of Temples to the Home of IIT Madras - Let's Have Some Fun!
         </p>
       </div>
     </motion.div>
