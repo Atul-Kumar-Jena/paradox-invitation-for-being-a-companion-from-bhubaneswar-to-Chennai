@@ -6,7 +6,7 @@ export const ChuggingText = () => {
 
   return (
     <motion.div
-      className="font-orbitron text-4xl md:text-6xl text-white tracking-wider text-center"
+      className="font-orbitron text-4xl md:text-6xl text-white tracking-wider text-center mt-24 md:mt-32 px-4"
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{
@@ -20,7 +20,7 @@ export const ChuggingText = () => {
         Bhubaneswar → Chennai Central Mail
       </h1>
       <motion.p 
-        className="text-cyan text-xl md:text-2xl mt-2 animate-glow font-space"
+        className="text-cyan text-xl md:text-2xl mt-4 animate-glow font-space"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3 }}
