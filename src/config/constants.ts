@@ -19,7 +19,7 @@ export const URLS = {
 
 // Journey Details
 export const JOURNEY_CONFIG = {
-  departureDate: "2024-06-03",
+  departureDate: "2025-06-01",
   departureTime: "20:00",
   stations: [
     { name: "Bhubaneswar", time: "20:00" },
@@ -32,11 +32,11 @@ export const JOURNEY_CONFIG = {
 
 // Event Details
 export const EVENT_CONFIG = {
-  name: "Paradox 2024",
-  startDate: "2024-06-04 09:00:00",
-  endDate: "2024-06-08 18:00:00",
+  name: "Paradox 2025",
+  startDate: "2025-06-04 09:00:00",
+  endDate: "2025-06-08 18:00:00",
   venue: "IIT Madras",
-  expectedParticipants: "10,000+",
+  expectedParticipants: "5000+",
 };
 
 // Theme Configuration
