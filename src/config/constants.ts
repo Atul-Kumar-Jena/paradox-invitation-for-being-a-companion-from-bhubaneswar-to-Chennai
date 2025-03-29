@@ -14,7 +14,7 @@ export const VIDEO_CONFIG = {
 // External URLs
 export const URLS = {
   paradox: "https://paradox.iitm.ac.in",
-  registration: "https://your-registration-form-url",
+  registration: "https://docs.google.com/forms/d/e/1FAIpQLScYrbuVum4fS8wTFtSrT9vo7PABMkCmY9Bx-j2VXl2ykX6lxQ/viewform?usp=dialog",
 };
 
 // Journey Details
