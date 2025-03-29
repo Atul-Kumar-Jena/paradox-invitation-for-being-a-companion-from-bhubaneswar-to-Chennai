@@ -19,7 +19,7 @@ export const ParadoxInfo = () => {
         <div className="flex items-center gap-4 hover:bg-cyan/5 p-2 rounded-lg transition-colors">
           <Calendar className="w-6 h-6 text-cyan" />
           <div>
-            <p className="text-white font-space">June 4-8, 2024</p>
+            <p className="text-white font-space">June 4-8, 2025</p>
             <p className="text-cyan/70 text-sm">5 Days of Innovation at IIT Madras</p>
           </div>
         </div>
@@ -28,7 +28,7 @@ export const ParadoxInfo = () => {
           <Train className="w-6 h-6 text-cyan" />
           <div>
             <p className="text-white font-space">Journey Details</p>
-            <p className="text-cyan/70 text-sm">20-hour Epic Train Adventure</p>
+            <p className="text-cyan/70 text-sm">20+ hours Epic Train Adventure</p>
           </div>
         </div>
 
@@ -36,7 +36,7 @@ export const ParadoxInfo = () => {
           <MapPin className="w-6 h-6 text-cyan" />
           <div>
             <p className="text-white font-space">Route Highlights</p>
-            <p className="text-cyan/70 text-sm">Bhubaneswar → Chennai Central</p>
+            <p className="text-cyan/70 text-sm">Bhubaneswar Railway Station → Chennai Central</p>
           </div>
         </div>
 
@@ -44,15 +44,15 @@ export const ParadoxInfo = () => {
           <Users className="w-6 h-6 text-cyan" />
           <div>
             <p className="text-white font-space">Squad Size</p>
-            <p className="text-cyan/70 text-sm">Join 20+ fellow tech enthusiasts</p>
+            <p className="text-cyan/70 text-sm">Join 20+ fellow peers</p>
           </div>
         </div>
 
         <div className="flex items-center gap-4 hover:bg-cyan/5 p-2 rounded-lg transition-colors">
-          <Info className="w-6 h-6 text-cyan" />
+          <Info className="w-6 h-6 text-cyan animate-pulse" />
           <div>
-            <p className="text-white font-space">Important Note</p>
-            <p className="text-cyan/70 text-sm">Click the info icon below for journey details</p>
+            <p className="text-white font-space">Click Info Icon Below At The Bottom Right</p>
+            <p className="text-cyan/70 text-sm">For complete journey details</p>
           </div>
         </div>
 
@@ -66,19 +66,19 @@ export const ParadoxInfo = () => {
           <ul className="space-y-2 text-cyan/80 font-space">
             <li className="flex items-center gap-2">
               <span className="text-cyan">•</span>
-              Network with fellow tech enthusiasts
+              Network with fellow peers
             </li>
             <li className="flex items-center gap-2">
               <span className="text-cyan">•</span>
-              Share ideas and build connections
+              Share ideas and build connections and have fun
             </li>
             <li className="flex items-center gap-2">
               <span className="text-cyan">•</span>
-              Experience the magic of train travel
+              Experience the magic of travelling together
             </li>
             <li className="flex items-center gap-2">
               <span className="text-cyan">•</span>
-              Arrive energized for Paradox 2024
+              Arrive energized for Paradox 2025
             </li>
           </ul>
         </motion.div>
