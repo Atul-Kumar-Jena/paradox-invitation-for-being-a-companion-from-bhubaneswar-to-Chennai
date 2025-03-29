@@ -13,8 +13,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Info } from 'lucide-react';
 
 const VIDEO_URL = "https://your-video-url.mp4";
-const PARADOX_URL = "https://paradox.iitm.ac.in";
-const REGISTRATION_URL = "https://your-registration-form-url";
+const PARADOX_URL = "https://www.iitmparadox.org";
+const REGISTRATION_URL = "https://docs.google.com/forms/d/e/1FAIpQLScYrbuVum4fS8wTFtSrT9vo7PABMkCmY9Bx-j2VXl2ykX6lxQ/viewform?usp=dialog";
 
 function App() {
   const [showContent, setShowContent] = useState(false);
