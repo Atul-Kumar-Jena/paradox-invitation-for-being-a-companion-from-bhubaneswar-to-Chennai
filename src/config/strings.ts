@@ -8,7 +8,7 @@ export const STRINGS = {
   },
   journey: {
     title: "Journey Route",
-    subtitle: "20 Hours • 5 Stations • Countless Memories",
+    subtitle: "20+ Hours • 35+ Stations • Countless Memories",
     whatToExpect: [
       "Network with fellow tech enthusiasts",
       "Share ideas and build connections",
