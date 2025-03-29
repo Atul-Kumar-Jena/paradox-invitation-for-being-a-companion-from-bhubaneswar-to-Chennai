@@ -17,7 +17,7 @@ export const ChuggingText = () => {
       onHoverStart={() => playWhistle()}
     >
       <h1 className="animate-float">
-        Bhubaneswar → Chennai Central Mail
+        Bhubaneswar Railway Station → Chennai Central Mail
       </h1>
       <motion.p 
         className="text-cyan text-xl md:text-2xl mt-4 animate-glow font-space"
@@ -25,7 +25,7 @@ export const ChuggingText = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
-        Calling all Bhubaneswariyas & Future IITians!
+        Calling all Bhubaneswariya IITians!
       </motion.p>
       <p className="text-cyan text-2xl md:text-3xl mt-4 animate-glow font-space">
         Departure: 8 PM | Arrival: 4 AM
